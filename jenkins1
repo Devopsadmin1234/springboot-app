@@ -6,7 +6,7 @@ pipeline {
         mavenHome = tool name: "Maven3", type: "maven"
         mavenCMD = "${mavenHome}/bin/mvn"
     }
-    agent any 
+   agent any 
 
     stages {
         stage('git clone') {
